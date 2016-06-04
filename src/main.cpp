@@ -2503,9 +2503,10 @@ bool LoadBlockIndex(bool fAllowNew)
         if (!fAllowNew)
             return false;
 
+
         const char* pszTimestamp = "1 June 2016 Silkcoin is finally finished";
         CTransaction txNew;
-        txNew.nTime = 1464803396;
+        txNew.nTime = 1398947338;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2515,9 +2516,9 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1464803396;
+        block.nTime    = 1398947338;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 638485;
+        block.nNonce   = 3490157;
 
         // If genesis block hash does not match, then generate new genesis hash.
        if (true && block.GetHash() != hashGenesisBlock)
@@ -2551,12 +2552,10 @@ bool LoadBlockIndex(bool fAllowNew)
        }
 
 
-        block.print();
         //// debug print
         ///
 	block.print();
-        assert(block.hashMerkleRoot == uint256("0xd2b170d2ecce3152841c7b0c88be26613f038d27c905880c8882d565f0f1b5e8"));
-        block.print();
+        assert(block.hashMerkleRoot == uint256("0x20ee030e661c9db5dc30fb4f08e2eac7220a626784e5b47fe131999363e50da1"));
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
 
@@ -2825,7 +2824,7 @@ bool static AlreadyHave(CTxDB& txdb, const CInv& inv)
 // The message start string is designed to be unlikely to occur in normal data.
 // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 // a large 4-byte int at any alignment.
-unsigned char pchMessageStart[4] = { 0x53, 0x07, 0x50, 0x22 };
+unsigned char pchMessageStart[4] = { 0x70, 0x35, 0x22, 0x05 };
 
 bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
 {
