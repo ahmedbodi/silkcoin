@@ -7,13 +7,13 @@ obj/miner.o: miner.cpp txdb.h txdb-leveldb.h main.h bignum.h serialize.h \
  zerocoin/AccumulatorProofOfKnowledge.h zerocoin/CoinSpend.h \
  zerocoin/SerialNumberSignatureOfKnowledge.h zerocoin/SpendMetaData.h \
  zerocoin/../uint256.h zerocoin/ParamGeneration.h \
- /home/ahmedbodi/silkcoin/src/leveldb/include/leveldb/db.h \
- /home/ahmedbodi/silkcoin/src/leveldb/include/leveldb/iterator.h \
- /home/ahmedbodi/silkcoin/src/leveldb/include/leveldb/slice.h \
- /home/ahmedbodi/silkcoin/src/leveldb/include/leveldb/status.h \
- /home/ahmedbodi/silkcoin/src/leveldb/include/leveldb/options.h \
- /home/ahmedbodi/silkcoin/src/leveldb/include/leveldb/write_batch.h \
- miner.h wallet.h ui_interface.h walletdb.h db.h base58.h kernel.h
+ /root/silkcoin/src/leveldb/include/leveldb/db.h \
+ /root/silkcoin/src/leveldb/include/leveldb/iterator.h \
+ /root/silkcoin/src/leveldb/include/leveldb/slice.h \
+ /root/silkcoin/src/leveldb/include/leveldb/status.h \
+ /root/silkcoin/src/leveldb/include/leveldb/options.h \
+ /root/silkcoin/src/leveldb/include/leveldb/write_batch.h miner.h \
+ wallet.h ui_interface.h walletdb.h db.h base58.h kernel.h
 miner.cpp txdb.h txdb-leveldb.h main.h bignum.h serialize.h :
  allocators.h version.h clientversion.h uint256.h sync.h net.h mruset.h :
  netbase.h compat.h protocol.h addrman.h util.h script.h keystore.h :
@@ -23,10 +23,10 @@ miner.cpp txdb.h txdb-leveldb.h main.h bignum.h serialize.h :
  zerocoin/AccumulatorProofOfKnowledge.h zerocoin/CoinSpend.h :
  zerocoin/SerialNumberSignatureOfKnowledge.h zerocoin/SpendMetaData.h :
  zerocoin/../uint256.h zerocoin/ParamGeneration.h :
- /home/ahmedbodi/silkcoin/src/leveldb/include/leveldb/db.h :
- /home/ahmedbodi/silkcoin/src/leveldb/include/leveldb/iterator.h :
- /home/ahmedbodi/silkcoin/src/leveldb/include/leveldb/slice.h :
- /home/ahmedbodi/silkcoin/src/leveldb/include/leveldb/status.h :
- /home/ahmedbodi/silkcoin/src/leveldb/include/leveldb/options.h :
- /home/ahmedbodi/silkcoin/src/leveldb/include/leveldb/write_batch.h :
- miner.h wallet.h ui_interface.h walletdb.h db.h base58.h kernel.h :
+ /root/silkcoin/src/leveldb/include/leveldb/db.h :
+ /root/silkcoin/src/leveldb/include/leveldb/iterator.h :
+ /root/silkcoin/src/leveldb/include/leveldb/slice.h :
+ /root/silkcoin/src/leveldb/include/leveldb/status.h :
+ /root/silkcoin/src/leveldb/include/leveldb/options.h :
+ /root/silkcoin/src/leveldb/include/leveldb/write_batch.h miner.h :
+ wallet.h ui_interface.h walletdb.h db.h base58.h kernel.h :

@@ -1,4 +1,4 @@
 obj/version.o: version.cpp version.h clientversion.h \
- /home/ahmedbodi/silkcoin/src/obj/build.h
+ /root/silkcoin/src/obj/build.h
 version.cpp version.h clientversion.h :
- /home/ahmedbodi/silkcoin/src/obj/build.h :
+ /root/silkcoin/src/obj/build.h :
